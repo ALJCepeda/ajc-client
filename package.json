@@ -2,10 +2,10 @@
   "name": "vue-3-starter",
   "version": "0.0.0",
   "scripts": {
-    "serve": "vite preview",
     "build": "vite build",
-    "dev": "vite --host",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src"
+    "serve": "vite --host",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "deploy": "yarn build && gcloud app deploy"
   },
   "dependencies": {
     "@mdi/font": "5.9.55",
