@@ -1,14 +1,16 @@
 <template>
   <main class='flex flex-col'>
-    <h1 class="mb-10 py-5">Welcome to AJ's Website!</h1>
+    <section class="px-5">
+      <h1 class="mb-10 py-5">Welcome to AJ's Website!</h1>
 
-    <p>Hi! This is AJ's website and the person who made this website is I... AJ!</p>
-    <p>It's mostly web development stuff so if you aren't a web developer you probably don't want to be here</p>
-    <p>I also have a cat named Luna</p>
-    <p>She's got an attitude</p>
+      <p>Hi! This is AJ's website and the person who made this website is I... AJ!</p>
+      <p>It's mostly web development stuff so if you aren't a web developer you probably don't want to be here</p>
+      <p>I also have a cat named Luna</p>
+      <p>She's got an attitude</p>
+    </section>
 
     <template v-for='photo in photos'>
-      <img class='w-6/12 mx-auto my-32' :src='photo' v-if='photo === currentPhoto' />
+      <img class='w-full md:w-6/12 mx-auto my-32' :src='photo' v-if='photo === currentPhoto' />
     </template>
   </main>
 </template>
