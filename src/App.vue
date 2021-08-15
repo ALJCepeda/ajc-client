@@ -1,8 +1,8 @@
 <template>
-  <main class="flex flex-col h-full">
-    <router-view></router-view>
+  <main class="flex flex-col">
+    <router-view class='container mx-auto'></router-view>
 
-    <nav class="flex flex-row justify-around w-full mt-auto">
+    <nav class="flex flex-row justify-around fixed left-0 right-0 bottom-0 bg-white shadow-2xl">
       <router-link
         v-for="button in navigation"
         :key="button.url"

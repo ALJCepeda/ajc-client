@@ -4,14 +4,19 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    height: 100vh;
-  }
-
   h1 {
     @apply text-2xl;
   }
+
   h2 {
     @apply text-xl;
+  }
+
+  #app {
+    height: calc(100vh - 88px);
+  }
+
+  .router-link-active {
+    @apply text-blue-600;
   }
 }
