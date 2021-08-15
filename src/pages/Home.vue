@@ -1,7 +1,7 @@
 <template>
   <main class='flex flex-col'>
     <section class="px-5">
-      <h1 class="mb-10 py-5">Welcome to AJ's Website!</h1>
+      <h1 class="mb-10 my-5">Welcome to AJ's Website!</h1>
 
       <p>Hi! This is AJ's website and the person who made this website is I... AJ!</p>
       <p>It's mostly web development stuff so if you aren't a web developer you probably don't want to be here</p>
@@ -10,7 +10,7 @@
     </section>
 
     <template v-for='photo in photos'>
-      <img class='w-full md:w-6/12 mx-auto my-32' :src='photo' v-if='photo === currentPhoto' />
+      <img class='w-full md:w-6/12 mx-auto my-20' :src='photo' v-if='photo === currentPhoto' />
     </template>
   </main>
 </template>
@@ -33,10 +33,10 @@ export default defineComponent({
       remainingPhotos: [],
       currentPhoto: '',
       photos: [
-        'https://storage.cloud.google.com/cepedaio.appspot.com/luna/20210717_213807.jpg',
-        'https://storage.cloud.google.com/cepedaio.appspot.com/luna/20210801_125503.jpg',
-        'https://storage.cloud.google.com/cepedaio.appspot.com/luna/20210810_134007.jpg',
-        'https://storage.cloud.google.com/cepedaio.appspot.com/luna/20210813_165559.jpg'
+        'https://storage.googleapis.com/cepedaio.appspot.com/luna/20210717_213807.jpg',
+        'https://storage.googleapis.com/cepedaio.appspot.com/luna/20210801_125503.jpg',
+        'https://storage.googleapis.com/cepedaio.appspot.com/luna/20210810_134007.jpg',
+        'https://storage.googleapis.com/cepedaio.appspot.com/luna/20210813_165559.jpg'
       ],
     } as HomePageData;
   },
